@@ -22,4 +22,16 @@
 SaveErr:
         Exit Sub
     End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.Checked Then
+            Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
+            Me.WindowState = FormWindowState.Maximized
+            Me.TopMost = True
+        Else
+            Me.FormBorderStyle = Windows.Forms.FormBorderStyle.Sizable
+            Me.WindowState = FormWindowState.Normal
+            Me.TopMost = False
+        End If
+    End Sub
 End Class
