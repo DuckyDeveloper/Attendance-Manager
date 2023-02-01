@@ -72,28 +72,28 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="attendancecheckDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="attendancecheckDataSet" msprop:Generator_DataSetName="attendancecheckDataSet">
+  <xs:element name="attendancecheckDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="attendancecheckDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="attendancecheckDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="attendance" msprop:Generator_RowEvHandlerName="attendanceRowChangeEventHandler" msprop:Generator_RowDeletedName="attendanceRowDeleted" msprop:Generator_RowDeletingName="attendanceRowDeleting" msprop:Generator_RowEvArgName="attendanceRowChangeEvent" msprop:Generator_TablePropName="attendance" msprop:Generator_RowChangedName="attendanceRowChanged" msprop:Generator_RowChangingName="attendanceRowChanging" msprop:Generator_TableClassName="attendanceDataTable" msprop:Generator_RowClassName="attendanceRow" msprop:Generator_TableVarName="tableattendance" msprop:Generator_UserTableName="attendance">
+        <xs:element name="attendance" msprop:Generator_RowClassName="attendanceRow" msprop:Generator_RowEvHandlerName="attendanceRowChangeEventHandler" msprop:Generator_RowDeletedName="attendanceRowDeleted" msprop:Generator_RowDeletingName="attendanceRowDeleting" msprop:Generator_RowEvArgName="attendanceRowChangeEvent" msprop:Generator_TablePropName="attendance" msprop:Generator_RowChangedName="attendanceRowChanged" msprop:Generator_UserTableName="attendance" msprop:Generator_RowChangingName="attendanceRowChanging" msprop:Generator_TableClassName="attendanceDataTable" msprop:Generator_TableVarName="tableattendance">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_UserColumnName="ID" type="xs:int" />
-              <xs:element name="IDNO" msprop:Generator_ColumnPropNameInRow="IDNO" msprop:Generator_ColumnPropNameInTable="IDNOColumn" msprop:Generator_ColumnVarNameInTable="columnIDNO" msprop:Generator_UserColumnName="IDNO" minOccurs="0">
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:int" />
+              <xs:element name="IDNO" msprop:Generator_UserColumnName="IDNO" msprop:Generator_ColumnPropNameInTable="IDNOColumn" msprop:Generator_ColumnPropNameInRow="IDNO" msprop:Generator_ColumnVarNameInTable="columnIDNO" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="RECORDED_TIME" msprop:Generator_ColumnPropNameInRow="RECORDED_TIME" msprop:Generator_ColumnPropNameInTable="RECORDED_TIMEColumn" msprop:Generator_ColumnVarNameInTable="columnRECORDED_TIME" msprop:Generator_UserColumnName="RECORDED_TIME" minOccurs="0">
+              <xs:element name="RECORDED_TIME" msprop:Generator_UserColumnName="RECORDED_TIME" msprop:Generator_ColumnPropNameInTable="RECORDED_TIMEColumn" msprop:Generator_ColumnPropNameInRow="RECORDED_TIME" msprop:Generator_ColumnVarNameInTable="columnRECORDED_TIME" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="DAILY_TIMERECORD" msprop:Generator_ColumnPropNameInRow="DAILY_TIMERECORD" msprop:Generator_ColumnPropNameInTable="DAILY_TIMERECORDColumn" msprop:Generator_ColumnVarNameInTable="columnDAILY_TIMERECORD" msprop:Generator_UserColumnName="DAILY_TIMERECORD" minOccurs="0">
+              <xs:element name="DAILY_TIMERECORD" msprop:Generator_UserColumnName="DAILY_TIMERECORD" msprop:Generator_ColumnPropNameInTable="DAILY_TIMERECORDColumn" msprop:Generator_ColumnPropNameInRow="DAILY_TIMERECORD" msprop:Generator_ColumnVarNameInTable="columnDAILY_TIMERECORD" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
